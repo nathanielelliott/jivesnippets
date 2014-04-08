@@ -13,7 +13,7 @@ There are a few tools that I use on a regular basis for editing / working with J
 Version
 ----
 
-1.02
+1.02 _Beta_
 
 Tech
 -----------
