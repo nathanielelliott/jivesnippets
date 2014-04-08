@@ -1,0 +1,197 @@
+<div class="jive-html-text-widget"><link href="//cloud.webtype.com/css/5311c461-9996-4781-a830-7d3206ab2258.css" rel="stylesheet" type="text/css">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+// --------------------------- MAKES BACK BUTTON WORK
+
+    $('#homecta-full a').click(function(){
+
+        var link = $(this).attr('href');
+
+        window.top.location.href=link;
+
+    });
+
+});
+
+equalheight = function(container){
+
+var currentTallest = 0,
+
+     currentRowStart = 0,
+
+     rowDivs = new Array(),
+
+     $el,
+
+     topPosition = 0;
+
+$(container).each(function() {
+
+   $el = $(this);
+
+   $($el).height('auto')
+
+   topPostion = $el.position().top;
+
+   if (currentRowStart != topPostion) {
+
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+
+       rowDivs[currentDiv].height(currentTallest);
+
+     }
+
+     rowDivs.length = 0; // empty the array
+
+     currentRowStart = topPostion;
+
+     currentTallest = $el.height();
+
+     rowDivs.push($el);
+
+   } else {
+
+     rowDivs.push($el);
+
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+
+  }
+
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+
+     rowDivs[currentDiv].height(currentTallest);
+
+   }
+
+});
+
+}
+
+$(window).load(function() {
+
+  equalheight('#homecta-full .bg');
+
+});
+
+$(window).resize(function() {
+
+  equalheight('#homecta-full .bg');
+
+});
+
+</script>
+
+<style>
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,dfn,em,font,img,kbd,q,s,samp,small,strike,strong,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,header,nav,section,footer,summary,article{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}
+
+body {color:#3d3d3d; background:#fff; padding:0; font:13px "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;line-height:1.25;text-align:left;margin:0 auto;}
+
+a, a:visited, a:link {color: #00679b;}a:hover {color: #00679b;}
+
+#homecta-full {margin-left:-30px; -webkit-font-smoothing:antialiased;}
+
+#homecta-full .cta {float:left; width:33.33%; padding-left:30px; box-sizing:border-box; -moz-box-sizing:border-box;}
+
+#homecta-full .bg {position:relative; color:#fff !important; padding:22px; box-sizing:border-box; -moz-box-sizing:border-box;}
+
+#homecta-full .bg-color1 {background:#f89838;}
+
+#homecta-full .bg-color2 {background:#5ab45c;}
+
+#homecta-full .bg-color3 {background:#3ebdad;}
+
+#homecta-full h2 {font-family:'Antenna Cond Black', AntennaCondBlack, Arial, sans-serif; font-size:20px; font-weight:normal; text-transform:uppercase; margin-bottom:7px;}
+
+#homecta-full .cta p {margin-top:6px;}
+
+#homecta-full .cta ul {margin-top:6px; padding-top:6px; border-top:solid 1px #fff;}
+
+#homecta-full .cta li {margin:6px 0 0 20px;}
+
+#homecta-full .cta a {color:#fff; font-family:'Antenna', Arial, sans-serif; text-transform:uppercase; text-decoration:none;}
+
+</style>
+
+<div id="homecta-full" class="clearfix">
+
+    <div class="cta">
+
+        <div class="bg bg-color1" style="height: 187px;">
+
+            <h2>Get Informed</h2>
+
+            <p>Everyone from social newbies to mavericks will benefit from these resources.</p>
+
+            <ul>
+
+                <li><a href="/community/jivetalks">Read Blogs</a></li>
+
+                <li><a href="/community/newsroom">View News</a></li>
+
+                <li><a href="/community/products">Explore Products</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="cta">
+
+        <div class="bg bg-color2" style="height: 187px;">
+
+            <h2>Get Connected</h2>
+
+            <p>Share best practices with those that share your role, industry, or even zip code.</p>
+
+            <ul>
+
+                <li><a href="/community/developer">Developers</a></li>
+
+                <li><a href="/groups/jive-customers">Customers</a></li>
+
+                <li><a href="/community/partners">Partners</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="cta">
+
+        <div class="bg bg-color3" style="height: 187px;">
+
+            <h2>Get Support</h2>
+
+            <p>When questions or issues arise, these online resources will help.</p>
+
+            <ul>
+
+                <li><a href="/community/developer">Find Answers</a></li>
+
+                <li><a href="/discussion/create!input.jspa?containerType=14&amp;containerID=2096">Ask the Community</a></li>
+
+                <li><a href="/support.jspa">Visit MyJive Group</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+</div>
