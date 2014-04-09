@@ -7,13 +7,14 @@ There are a few tools that I use on a regular basis for editing / working with J
 
 * jive-htmlwidget.html - What Jive uses on their own personal site's homepage, a starter point for all HTML styled things that we do.
 * jive-themesearch.txt - How we search out what theme files we need to change, edit, modify. As well, we use this to see how things work together. **Command + F** is amazing!
+* jive-htmlsidebar.html - How does the sidebar work on the right of the homepage of Jive.
 
  
 
 Version
 ----
 
-1.02 _Beta_
+1.05 _Beta_
 
 Tech
 -----------
